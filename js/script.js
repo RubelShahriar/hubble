@@ -14,7 +14,7 @@ menuMultiply.addEventListener("click", function () {
 $(".customize-slider").slick({
   dots: true,
   arrows: false,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
   infinite: true,
   speed: 300,
