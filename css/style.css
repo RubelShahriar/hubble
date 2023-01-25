@@ -385,13 +385,12 @@ a {
   border-radius: 20px;
 }
 .gain-context-right-1 {
-  background: radial-gradient(
+  background-image: radial-gradient(
       92.72% 100% at 50% 0%,
       rgba(215, 215, 215, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
     ),
     radial-gradient(92.72% 100% at 50% 0%, #311b92 0%, #182c4a 20%);
-
   background-blend-mode: overlay, difference, difference, exclusion, normal;
 }
 .gain-context-right-2 {
