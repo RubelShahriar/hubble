@@ -28,10 +28,11 @@ $(".customize-slider").on("init", function (event, slick) {
 $(".customize-slider").slick({
   dots: true,
   arrows: false,
+  fade: true,
   autoplay: true,
-  autoplaySpeed: 8000,
+  autoplaySpeed: 3000,
   infinite: true,
-  speed: 300,
+  speed: 100,
   slidesToShow: 1,
   slidesToScroll: 1,
   responsive: [

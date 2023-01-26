@@ -3,6 +3,7 @@
   --pri-bg: rgb(134 85 255);
   --white: white;
   --def-bg: #0a1628;
+  --border: 1px solid #424242;
 }
 body ::selection,
 html ::selection {
@@ -11,10 +12,11 @@ html ::selection {
 }
 body,
 html {
-  font-size: 16px;
+  font-size: 15px;
   color: var(--white);
   background-color: #0a1628;
   font-family: "Poppins", sans-serif;
+  font-weight: 300;
   overflow-x: clip;
 }
 * {
@@ -60,20 +62,26 @@ a {
   height: 36px;
   z-index: 9999;
 }
-.header-marquee-con {
-  margin: 0 100px;
+.header-marquee-item {
+  margin: 0 50px;
+  position: relative;
 }
 .header-marquee span {
   margin-left: 10px;
   font-weight: 300;
   font-size: 12px;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .header-marquee-semibold {
   font-weight: 500 !important;
 }
 .header-marquee i {
-  margin: auto 0;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
 }
 /* navigation part css */
 .nav {
@@ -82,6 +90,7 @@ a {
   top: 36px;
   padding: 15px 0;
   z-index: 9999;
+  box-shadow: rgb(134 85 255 / 20%) 0px 0px 50px;
 }
 .nav-item a {
   color: white !important;
@@ -278,7 +287,7 @@ a {
   position: absolute;
   top: 0;
   left: 100px;
-  border: 1px solid gray;
+  border: var(--border);
   opacity: 0.9;
 }
 @media screen and (max-width: 800px) {
@@ -364,7 +373,7 @@ a {
 .gain-context-con {
   display: flex;
   justify-content: space-between;
-  border: 1px solid gray;
+  border: var(--border);
   border-radius: 20px;
   margin-top: 80px;
   background-color: var(--def-bg);
@@ -472,7 +481,7 @@ a {
 .aquirement-item {
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid gray;
+  border: var(--border);
   display: flex;
   margin-bottom: 20px;
 }
@@ -625,7 +634,7 @@ a {
 .who-iam-item {
   display: flex;
   justify-content: space-between;
-  border: 1px solid gray;
+  border: var(--border);
   border-radius: 15px;
   padding: 30px;
   box-shadow: 0px 0px 40px rgb(234 255 255 / 3%);
@@ -635,8 +644,19 @@ a {
 .who-iam-left {
   width: 20%;
 }
+.who-iam-i-con {
+  position: relative;
+}
 .who-iam-user-icon {
   font-size: 30px;
+}
+.who-iam-user-icon2 {
+  color: purple;
+  font-weight: 700;
+  font-size: 15px;
+  position: absolute;
+  top: 20px;
+  left: 21px;
 }
 .who-iam-right {
   width: 80%;
@@ -684,10 +704,13 @@ a {
 .customize-item {
   display: flex !important;
   justify-content: space-between;
-  background-image: linear-gradient(160deg, var(--def-bg) 60%, #673ab7);
+  background-image: linear-gradient(160deg, var(--def-bg) 50%, #673ab7);
   border-radius: 20px;
-  border: 1px solid gray;
+  border: var(--border);
   margin-bottom: 20px;
+}
+.customize-item-left-light {
+  background-image: linear-gradient(200deg, var(--def-bg) 80%, #284c64);
 }
 .customize-left {
   width: 50%;
@@ -715,26 +738,28 @@ a {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid gray;
+  border: var(--border);
   border-radius: 8px;
   padding: 4px;
   background-color: var(--def-bg);
+  display: flex;
+  justify-content: space-between;
 }
 .customize .slick-dots li {
   display: inline-block;
+  transition: 0.4s ease-out;
 }
 .customize .slick-dots button {
   cursor: pointer;
   padding: 10px;
   display: inline-block !important;
-  border-radius: 10px;
   margin: 0 15px;
   border: none;
   background-color: transparent;
   color: white;
 }
 .customize .slick-dots .slick-active {
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: var(--pri-bg);
   z-index: 1;
 }
@@ -768,7 +793,7 @@ a {
 }
 .review-slider {
   padding: 30px;
-  border: 1px solid gray;
+  border: var(--border);
   border-radius: 7px;
   margin: 15px;
   width: 350px;
@@ -793,7 +818,7 @@ a {
   justify-content: center;
   align-items: center;
   height: 500px;
-  border: 1px solid gray;
+  border: var(--border);
   border-radius: 15px;
   text-align: center;
   position: relative;
@@ -895,7 +920,7 @@ a {
   width: 500px;
   height: 60px;
   border: none;
-  border: 1px solid gray;
+  border: var(--border);
   border-radius: 10px;
   background-color: transparent;
   padding-left: 20px;
