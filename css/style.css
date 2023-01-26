@@ -34,6 +34,9 @@ a {
   color: white;
   text-decoration: none;
 }
+.container {
+  padding: 0px !important;
+}
 .common-btn {
   background-color: var(--pri-bg);
   border: none;
@@ -817,9 +820,6 @@ a {
   position: relative;
   overflow: hidden;
   margin-bottom: 80px;
-  background-image: url("../images/gradient.png") no-repeat center;
-  background-size: cover;
-  overflow: hidden;
 }
 .bring-con {
   z-index: 100 !important;
