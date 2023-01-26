@@ -1,5 +1,10 @@
 const menubar = document.querySelector(".menubar-img");
 const menuMultiply = document.querySelector(".menu-multiply-img");
+const x = document.querySelector(".small-chatbox");
+
+x.addEventListener("click", function () {
+  x.style.display = "none";
+});
 
 menubar.addEventListener("click", function () {
   menubar.style.display = "none";
@@ -68,7 +73,7 @@ $(".customize-slider").slick({
 // slick marquee
 jQuery(document).ready(function ($) {
   $(".header-marquee").slick({
-    speed: 15000,
+    speed: 19000,
     autoplay: true,
     autoplaySpeed: 500,
     centerMode: true,
