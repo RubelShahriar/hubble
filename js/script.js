@@ -11,11 +11,25 @@ menuMultiply.addEventListener("click", function () {
 });
 
 // slick slider
+$(".customize-slider").on("init", function (event, slick) {
+  var dots = $(".slick-dots li");
+  console.log(dots);
+  dots.each(function (k, v) {
+    $(this)
+      .find("button")
+      .addClass("heading" + k);
+  });
+  var items = slick.$slides;
+  items.each(function (k, v) {
+    var text = $(this).find("h2").text();
+    $(".heading" + k).text(text);
+  });
+});
 $(".customize-slider").slick({
   dots: true,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 8000,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
@@ -53,9 +67,9 @@ $(".customize-slider").slick({
 // slick marquee
 jQuery(document).ready(function ($) {
   $(".header-marquee").slick({
-    speed: 10000,
+    speed: 15000,
     autoplay: true,
-    autoplaySpeed: 0,
+    autoplaySpeed: 500,
     centerMode: true,
     cssEase: "linear",
     slidesToShow: 1,

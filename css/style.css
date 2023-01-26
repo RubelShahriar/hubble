@@ -15,6 +15,7 @@ html {
   color: var(--white);
   background-color: #0a1628;
   font-family: "Poppins", sans-serif;
+  overflow-x: clip;
 }
 * {
   margin: 0;
@@ -54,6 +55,10 @@ a {
 .header-marquee {
   background-color: var(--pri-bg);
   padding: 6px 0;
+  position: sticky;
+  top: 0;
+  height: 36px;
+  z-index: 9999;
 }
 .header-marquee-con {
   margin: 0 100px;
@@ -61,17 +66,21 @@ a {
 .header-marquee span {
   margin-left: 10px;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 .header-marquee-semibold {
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: 500 !important;
+}
+.header-marquee i {
+  margin: auto 0;
 }
 /* navigation part css */
 .nav {
   background-color: var(--def-bg) !important;
   position: sticky;
-  top: 0;
+  top: 36px;
+  padding: 15px 0;
   z-index: 9999;
 }
 .nav-item a {
@@ -363,7 +372,7 @@ a {
 }
 .gain-context-sticky {
   position: sticky;
-  top: 120px;
+  top: 160px;
 }
 .gain-context-inner-flex {
   display: flex;
@@ -669,7 +678,7 @@ a {
 }
 .customize-con {
   border-radius: 20px;
-  margin-top: 50px;
+  margin-top: 100px;
   position: relative;
 }
 .customize-item {
@@ -701,53 +710,33 @@ a {
   width: 50%;
 }
 .customize .slick-dots {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 8px;
-  padding: 4px;
-  background-color: var(--def-bg);
-}
-.customize .slick-dots button {
-  display: none;
-}
-.customize .slick-dots li {
-  display: none;
-  cursor: pointer;
-  display: inline-block;
-  /* width: 150px; */
-  height: 30px;
-  border-radius: 10px;
-  /* margin: 0 15px; */
-}
-.customize .slick-dots .slick-active {
-  display: none;
-  background-color: var(--pri-bg);
-  z-index: 1;
-}
-.customize-abs-tabs {
-  width: 800px;
+  width: 900px;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid gray;
-  border-radius: 10px;
-  padding: 8px;
-  display: flex;
-  justify-content: space-between;
+  border-radius: 8px;
+  padding: 4px;
   background-color: var(--def-bg);
-  z-index: 10;
 }
-.customize-abs-tabs p {
+.customize .slick-dots li {
   display: inline-block;
+}
+.customize .slick-dots button {
   cursor: pointer;
+  padding: 10px;
+  display: inline-block !important;
   border-radius: 10px;
   margin: 0 15px;
-  padding: 5px;
-  text-transform: capitalize;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.customize .slick-dots .slick-active {
+  border-radius: 10px;
+  background-color: var(--pri-bg);
+  z-index: 1;
 }
 @media screen and (max-width: 767px) {
   .customize {
