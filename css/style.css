@@ -403,13 +403,7 @@ a {
   border-radius: 20px;
 }
 .gain-context-right-1 {
-  background-image: radial-gradient(
-      92.72% 100% at 50% 0%,
-      rgba(215, 215, 215, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
-    ),
-    radial-gradient(92.72% 100% at 50% 0%, #311b92 0%, #182c4a 20%);
-  background-blend-mode: overlay, difference, difference, exclusion, normal;
+  background-image: linear-gradient(340deg, #0a1628 65%, #2a526e);
 }
 .gain-context-right-2 {
   background-image: linear-gradient(160deg, #0a1628 65%, #2a526e);
@@ -651,12 +645,12 @@ a {
   font-size: 30px;
 }
 .who-iam-user-icon2 {
-  color: purple;
+  color: var(--pri-bg);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 18px;
   position: absolute;
-  top: 20px;
-  left: 21px;
+  top: 18px;
+  left: 18px;
 }
 .who-iam-right {
   width: 80%;
@@ -818,17 +812,14 @@ a {
   justify-content: center;
   align-items: center;
   height: 500px;
-  border: var(--border);
   border-radius: 15px;
   text-align: center;
   position: relative;
   overflow: hidden;
   margin-bottom: 80px;
-  background: linear-gradient(306.71deg, #003cd8 9.34%, #0a1628 85.65%),
-    linear-gradient(83.76deg, #5000f9 3.4%, #000000 96.6%),
-    radial-gradient(70.71% 99% at 100% 39.75%, #7700d5 0%, #000000 100%),
-    radial-gradient(70.41% 100% at 50% 0%, #d5b300 0%, #2200aa 100%);
-  background-blend-mode: soft-light, difference, difference, normal;
+  background-image: url("../images/gradient.png") no-repeat center;
+  background-size: cover;
+  overflow: hidden;
 }
 .bring-con {
   z-index: 100 !important;
@@ -839,6 +830,7 @@ a {
 }
 .bring-h1 {
   width: 400px;
+  line-height: 1.2;
 }
 .bring-btn {
   margin-top: 20px;
@@ -849,15 +841,15 @@ a {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 10;
 }
 .bring-img1 {
   width: 1000px;
-  z-index: 1;
+  z-index: 10;
 }
 .bring-img2 {
   width: 1400px;
-  z-index: 1;
+  z-index: 10;
 }
 @media screen and (max-width: 767px) {
   .bring .cmn-heading {
