@@ -1037,6 +1037,12 @@ a {
   top: 50%;
   transform: translateY(-50%);
   display: inline-block;
+  font-weight: 400;
+}
+.footer-btn:hover {
+  background-color: white;
+  transition: 0.2s;
+  color: #0a1628;
 }
 .footer hr {
   margin: 60px 0;
@@ -1051,7 +1057,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .footer-con {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr, repeat(2, 1fr);
   }
   .footer-first-item {
     text-align: center !important;
@@ -1091,6 +1097,9 @@ a {
   .footer-btn {
     width: 150px;
     margin-bottom: 40px !important;
+  }
+  .footer-heading {
+    visibility: visible !important;
   }
 }
 .floating-chat {
