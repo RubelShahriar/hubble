@@ -52,8 +52,34 @@ a {
   font-weight: 500;
 }
 @media screen and (max-width: 767px) {
+  html,
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .nav,
+  header,
+  main,
+  .footer {
+    padding: 0 20px !important;
+  }
+  .nav {
+    padding: 15px 20px !important;
+  }
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+  }
+  .lg-device-btn {
+    display: none !important;
+  }
+  .sm-device-btn {
+    margin-top: 30px !important;
+  }
   .cmn-heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
   }
 }
 /* header top marquee */
@@ -331,7 +357,7 @@ a {
     margin-top: 40px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .header {
     height: 600px;
   }
@@ -347,17 +373,26 @@ a {
   .header-left {
     text-align: center;
     width: 100%;
+    height: 260px;
+  }
+  .header-left-h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
   }
   .common-btn {
     margin: 0 auto;
+    width: 90%;
   }
   .header-right {
     text-align: center;
     width: 100%;
   }
   .header-right::after {
-    bottom: -270px;
+    bottom: -320px;
     left: 20px;
+  }
+  .header-banner-img {
+    width: 90%;
   }
 }
 /* gain context css */
@@ -424,13 +459,14 @@ a {
 }
 @media screen and (max-width: 1023px) {
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .gain-context {
     padding: 0 40px;
   }
   .gain-context-heading {
     font-size: 30px;
     width: auto;
+    margin-top: -20px !important;
   }
   .gain-context-con {
     display: block;
@@ -527,10 +563,17 @@ a {
     width: 100%;
   }
   .aquirement-item {
-    padding: 5px 10px;
+    padding: 18px 10px;
+    margin-bottom: 25px !important;
+    text-align: vertical !important;
   }
   .aquirement-inner-p {
     font-size: 2rem;
+    font-weight: 300;
+    margin: auto 0;
+  }
+  .aquirement-inner-text p {
+    margin: auto 0;
   }
 }
 /* why huble css */
@@ -605,6 +648,7 @@ a {
 @media screen and (max-width: 767px) {
   .why-hubble {
     padding: 0 0;
+    margin-top: 80px;
   }
   .why-hubble-con {
     display: block;
@@ -615,6 +659,10 @@ a {
   }
   .why-hubble-h1 {
     font-size: 1.8rem;
+  }
+  .why-hubble-arrow {
+    padding: 3px !important;
+    font-size: 18px;
   }
   .why-hubble-right {
     width: 100%;
@@ -692,6 +740,18 @@ a {
   }
   .who-iam-item {
     padding: 15px;
+    display: block;
+  }
+  .who-iam-left {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .who-iam-user-icon2 {
+    left: 50%;
+  }
+  .who-iam-right {
+    width: 100%;
   }
 }
 /* customize part css */
@@ -775,9 +835,34 @@ a {
   }
   .customize-left {
     width: 100%;
+    height: 300px;
+  }
+  .customize-left-h2 {
+    font-size: 1.5rem;
+  }
+  .customize-left-p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .customize-a {
+    text-align: center;
   }
   .customize-right {
     width: 100%;
+  }
+  .customize .slick-dots {
+    width: 300px;
+    top: 103%;
+    border: none;
+  }
+  .customize .slick-dots li {
+    width: 100px;
+    height: 2px;
+    background-color: gray;
+    margin-right: 20px;
+  }
+  .customize .slick-dots button {
+    display: none !important;
   }
 }
 /* customers part css */
@@ -811,7 +896,12 @@ a {
 @media screen and (max-width: 767px) {
   .review-header {
     text-align: center;
+    margin: 0 auto;
     margin-top: 30px;
+  }
+  .review-heading {
+    width: 100%;
+    text-align: center;
   }
 }
 /* bring part css */
@@ -858,8 +948,18 @@ a {
   z-index: 10;
 }
 @media screen and (max-width: 767px) {
+  .bring {
+    height: 330px;
+    margin-top: 80px;
+  }
   .bring .cmn-heading {
     font-size: 2rem;
+  }
+  .bring-h1 {
+    font-size: 1.8rem !important;
+    width: 340px;
+    font-weight: 400;
+    margin-bottom: 30px;
   }
   .bring-img {
     width: 400px;
@@ -877,7 +977,7 @@ a {
 }
 .footer-con {
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
 }
 .footer-heading {
@@ -951,10 +1051,17 @@ a {
 }
 @media screen and (max-width: 767px) {
   .footer-con {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .footer-subscribe-p {
-    font-size: 1.2rem;
+  .footer-first-item {
+    text-align: center !important;
+    margin-bottom: 30px;
+  }
+  .footer-item li {
+    margin-bottom: 10px;
+  }
+  .footer-small {
+    margin-bottom: 30px;
   }
   .footer-subscribe {
     display: block;
@@ -965,11 +1072,25 @@ a {
   .footer-bottom {
     display: block;
   }
+  .footer-bottom-first {
+    text-align: center;
+    margin-bottom: 25px;
+  }
   .footer hr {
     margin: 30px 0;
   }
   .footer span {
     margin-right: 15px;
+  }
+  .footer-subscribe-left {
+    text-align: center;
+    font-size: 1.7rem !important;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .footer-btn {
+    width: 150px;
+    margin-bottom: 40px !important;
   }
 }
 .floating-chat {

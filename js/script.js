@@ -3,6 +3,7 @@ const menuMultiply = document.querySelector(".menu-multiply-img");
 const x = document.querySelector(".small-chatbox");
 const bringBtn = document.querySelector(".bring-btn");
 const bringImg1 = document.querySelector(".bring-img1");
+const mediaQue = window.matchMedia("(max-width: 767px)");
 
 x.addEventListener("click", function () {
   x.style.display = "none";
@@ -34,8 +35,10 @@ $(".customize-slider").on("init", function (event, slick) {
   });
   var items = slick.$slides;
   items.each(function (k, v) {
-    var text = $(this).find("h2").text();
-    $(".heading" + k).text(text);
+    if (!window.matchMedia("(max-width: 767px)").matches) {
+      var text = $(this).find("h2").text();
+      $(".heading" + k).text(text);
+    }
   });
 });
 $(".customize-slider").slick({
