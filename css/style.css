@@ -973,7 +973,7 @@ a {
 }
 /* footer part css */
 .footer {
-  padding: 0 60px;
+  padding: 0 60px !important;
 }
 .footer-con {
   display: grid;
@@ -1157,11 +1157,11 @@ a {
   bottom: 70px;
 }
 .chatbox-header {
-  height: 70px;
+  height: 66px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-image: linear-gradient(to right, purple, lightBlue);
-  padding: 20px;
+  padding: 15px;
 }
 .chatbox-header-con {
   width: 40px;
@@ -1186,4 +1186,69 @@ a {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.chc-2 {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.chatbox-field-text {
+  color: black;
+  margin-left: 55px;
+  margin-right: 20px;
+  margin-top: -20px;
+  font-size: 14px;
+}
+.chatbox-field-text p {
+  padding: 10px;
+  display: inline-block;
+  background-color: #e0e0e0;
+  border-radius: 0 8px 8px 8px;
+}
+.chatbox-field-text a {
+  color: blue;
+  padding: 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.chatbox-hr {
+  margin-top: 120px;
+  color: gray;
+}
+.chatbox-input {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+.chatbox-input input {
+  width: 300px;
+  border: none;
+  border: 1px solid gray;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: auto;
+  font-size: 13px;
+}
+.chatbox-input input:hover {
+  cursor: not-allowed;
+}
+.chatbox-input i {
+  color: gray;
+  font-size: 26px;
+}
+.chat-box-footer {
+  width: 100%;
+  text-align: center;
+  color: #0a1628;
+  font-size: 13px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.chat-box-footer span {
+  color: orange;
+}
+.d-none {
+  display: none;
 }

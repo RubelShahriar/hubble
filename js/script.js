@@ -3,16 +3,19 @@ const menuMultiply = document.querySelector(".menu-multiply-img");
 const x = document.querySelector(".small-chatbox");
 const bringBtn = document.querySelector(".bring-btn");
 const bringImg1 = document.querySelector(".bring-img1");
-const mediaQue = window.matchMedia("(max-width: 767px)");
+const floatingMsgCircle = document.querySelector(".floating-msg-circle");
+const msgBox = document.querySelector(".msg-box");
+const floatingXIcon = document.querySelector(".floating-x-icon");
+const convIcon = document.querySelector(".conv-icon");
 
 x.addEventListener("click", function () {
   x.style.display = "none";
 });
 
-bringBtn.addEventListener("onclick", function () {
-  console.log("bringImg1");
-
-  bringImg1.style.display = "none";
+floatingMsgCircle.addEventListener("click", function () {
+  msgBox.classList.toggle("d-none");
+  floatingXIcon.classList.toggle("d-none");
+  convIcon.classList.toggle("d-none");
 });
 
 menubar.addEventListener("click", function () {

@@ -724,7 +724,10 @@
       </div>
     </footer>
     <div class="floating-chat">
-      <i class="bx bxs-chat chat-icon"></i>
+      <div class="floating-msg-circle">
+        <i class="bx bxs-chat chat-icon conv-icon"></i>
+      <i class="bx bx-x chat-icon floating-x-icon d-none"></i>
+      </div>
       <div class="small-chatbox">
         <div class="footer-circle">
           <img class="footer-circle-img" src="./images/hubble_avatar.jpeg" alt="logo_avatar" width="50" height="50">
@@ -732,7 +735,7 @@
         <i class="bx bx-x x-icon"></i>
         <p class="footer-small-chatbox-p">Have any question? I'm happy to help you.</p>
       </div>
-      <div class="msg-box">
+      <div class="msg-box d-none">
         <div class="chatbox-header">
 <div class="chatbox-header-content">
   <div class="chatbox-header-con">
@@ -742,7 +745,26 @@
   <span>Hubble Bot</span>
 </div>
         </div>
-        <div></div>
+        <div class="chatbox-field">
+          <div class="chatbox-header-con chc-2">
+            <img class="chatbox-header-img" src="./images/hubble_avatar.jpeg" alt="logo_avatar" width="40" height="40">
+          </div>
+          <div class="chatbox-field-text">
+            <p>Have any questions? I'm happy to help.</p>
+            <p>What would you like to do?</p>
+            <a href="#">Learn about products</a>
+            <a href="#">Something else</a>
+          </div>
+        </div>
+        <hr class="chatbox-hr">
+        <div class="chatbox-input">
+          <input type="text" placeholder="Choose an option" disabled>
+          <i class="bx bxs-paper-plane"></i>
+        </div>
+        <small class="chat-box-footer"">
+          <svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M17 16c-1.38 0-2.5-1.12-2.5-2.5S15.62 11 17 11s2.5 1.12 2.5 2.5S18.38 16 17 16m.906-8.43V4.832c.716-.338 1.218-1.061 1.218-1.9v-.064c0-1.158-.95-2.105-2.11-2.105h-.064c-1.161 0-2.111.947-2.111 2.105v.064c0 .839.503 1.562 1.219 1.9V7.57c-1.067.164-2.042.603-2.846 1.249L5.676 2.97c.05-.191.085-.387.085-.594C5.762 1.067 4.698.001 3.384 0 2.069-.001 1 1.06 1 2.372.998 3.683 2.063 4.748 3.378 4.75c.428 0 .825-.121 1.172-.318l7.413 5.753c-.63.95-1 2.087-1 3.311 0 1.282.406 2.467 1.093 3.443L9.8 19.188c-.178-.053-.363-.091-.56-.091-1.08 0-1.956.874-1.956 1.952 0 1.078.876 1.951 1.956 1.951 1.081 0 1.957-.873 1.957-1.95 0-.196-.038-.381-.091-.559l2.23-2.225c1.012.772 2.273 1.235 3.645 1.235 3.324 0 6.018-2.69 6.018-6.005 0-3.002-2.21-5.482-5.094-5.926" id="sprocket__a"></path></defs><use xlink:href="#sprocket__a" fill-rule="evenodd"></use></svg>
+          Add free <span>live chat</span> to your site
+        </small>
       </div>
     </div>
     <script src="./js/jquery-1.12.4.min.js"></script>
