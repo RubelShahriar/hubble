@@ -1,9 +1,17 @@
 const menubar = document.querySelector(".menubar-img");
 const menuMultiply = document.querySelector(".menu-multiply-img");
 const x = document.querySelector(".small-chatbox");
+const bringBtn = document.querySelector(".bring-btn");
+const bringImg1 = document.querySelector(".bring-img1");
 
 x.addEventListener("click", function () {
   x.style.display = "none";
+});
+
+bringBtn.addEventListener("onclick", function () {
+  console.log("bringImg1");
+
+  bringImg1.style.display = "none";
 });
 
 menubar.addEventListener("click", function () {
