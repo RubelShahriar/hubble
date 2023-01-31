@@ -637,13 +637,15 @@ a {
   height: 1px;
   background-image: linear-gradient(to right, #eaffff, transparent 100%);
   position: absolute;
-  top: 20px;
-  right: 100px;
+  top: 0px;
+  right: 0px;
   transform: translateX(0px) translateY(0px) rotate(-25deg) translateZ(0px);
+  transition: 0.4s !important;
 }
 .meteor-img1 {
   width: 53px;
   right: 70px;
+  transition: 0.4s !important;
 }
 @media screen and (max-width: 767px) {
   .why-hubble {
@@ -938,17 +940,17 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  transition: 0.8s;
+  transition: 0.4s ease-out;
 }
 .bring-img1 {
   width: 1000px;
   z-index: 10;
-  transition: 0.8s;
+  transition: 0.4s ease-out;
 }
 .bring-img2 {
   width: 1400px;
   z-index: 10;
-  transition: 0.8s;
+  transition: 0.4s ease-out;
 }
 @media screen and (max-width: 767px) {
   .bring {

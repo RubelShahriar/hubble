@@ -9,11 +9,24 @@ const floatingMsgCircle = document.querySelector(".floating-msg-circle");
 const msgBox = document.querySelector(".msg-box");
 const floatingXIcon = document.querySelector(".floating-x-icon");
 const convIcon = document.querySelector(".conv-icon");
+const meteorImg = document.querySelector(".why-hubble-meteor-img");
+const meteorImg1 = document.querySelector(".meteor-img1");
+
+AOS.init({
+  duration: 1200,
+});
+
+window.addEventListener("load", function () {
+  meteorImg1.style.top = "40px";
+  meteorImg1.style.right = "100px";
+  meteorImg.style.top = "20px";
+  meteorImg.style.right = "100px";
+});
 
 bringBtn.addEventListener("mouseenter", function () {
   bringImg0.style.width = "500px";
   bringImg1.style.width = "900px";
-  bringImg2.style.width = "1300px";
+  bringImg2.style.width = "1200px";
 });
 bringBtn.addEventListener("mouseout", function () {
   bringImg0.style.width = "600px";
