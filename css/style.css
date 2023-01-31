@@ -938,14 +938,17 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
+  transition: 0.8s;
 }
 .bring-img1 {
   width: 1000px;
   z-index: 10;
+  transition: 0.8s;
 }
 .bring-img2 {
   width: 1400px;
   z-index: 10;
+  transition: 0.8s;
 }
 @media screen and (max-width: 767px) {
   .bring {
@@ -1056,8 +1059,11 @@ a {
   margin-right: 30px;
 }
 @media screen and (max-width: 767px) {
+  .footer {
+    padding: 0 20px !important;
+  }
   .footer-con {
-    grid-template-columns: 1fr, repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .footer-first-item {
     text-align: center !important;

@@ -2,11 +2,24 @@ const menubar = document.querySelector(".menubar-img");
 const menuMultiply = document.querySelector(".menu-multiply-img");
 const x = document.querySelector(".small-chatbox");
 const bringBtn = document.querySelector(".bring-btn");
+const bringImg0 = document.querySelector(".bring-img");
 const bringImg1 = document.querySelector(".bring-img1");
+const bringImg2 = document.querySelector(".bring-img2");
 const floatingMsgCircle = document.querySelector(".floating-msg-circle");
 const msgBox = document.querySelector(".msg-box");
 const floatingXIcon = document.querySelector(".floating-x-icon");
 const convIcon = document.querySelector(".conv-icon");
+
+bringBtn.addEventListener("mouseenter", function () {
+  bringImg0.style.width = "500px";
+  bringImg1.style.width = "900px";
+  bringImg2.style.width = "1300px";
+});
+bringBtn.addEventListener("mouseout", function () {
+  bringImg0.style.width = "600px";
+  bringImg1.style.width = "1000px";
+  bringImg2.style.width = "1400px";
+});
 
 x.addEventListener("click", function () {
   x.style.display = "none";
@@ -30,7 +43,7 @@ menuMultiply.addEventListener("click", function () {
 // slick slider
 $(".customize-slider").on("init", function (event, slick) {
   var dots = $(".slick-dots li");
-  console.log(dots);
+  // console.log(dots);
   dots.each(function (k, v) {
     $(this)
       .find("button")
