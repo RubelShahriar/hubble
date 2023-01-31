@@ -133,6 +133,10 @@ a {
 .menu-chevron-icon {
   display: none;
 }
+.nav-menu-icon {
+  color: white;
+  font-size: 30px;
+}
 .btn-hover:hover {
   background-color: rgb(97 66 190);
   transition: 0.4s;
@@ -163,6 +167,29 @@ a {
 }
 .submenu-inner-flex li {
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+}
+.submenu-inner-flex li i {
+  font-size: 24px;
+  display: none;
+}
+.submenu-inner-flex li:hover {
+  color: var(--pri-bg);
+}
+.submenu-inner-flex li:hover i {
+  display: block;
+}
+.submenu-inner-flex-left {
+  width: 30%;
+}
+.submenu-inner-flex-right {
+  width: 30%;
+}
+.submenu-inner-flex-right-r {
+  width: 30%;
 }
 .sub-menu:hover .submenu-inner-flex {
   visibility: visible;
@@ -250,6 +277,24 @@ a {
   }
   .sm-device-btn {
     display: block;
+  }
+  .submenu-inner-flex-left {
+    width: 90%;
+  }
+  .submenu-inner-flex-right {
+    width: 90%;
+  }
+  .submenu-inner-flex-right-r {
+    width: 90%;
+  }
+  .sub-menu hr {
+    color: white;
+  }
+  .submenu-inner-flex p {
+    color: white;
+  }
+  .submenu-inner-flex li {
+    color: white;
   }
 }
 /* header css */
@@ -893,7 +938,7 @@ a {
   margin-bottom: 30px;
 }
 .review-slider-addre {
-  color: darkcyan;
+  color: #007aff;
 }
 @media screen and (max-width: 767px) {
   .review-header {
@@ -1111,9 +1156,9 @@ a {
   }
 }
 .floating-chat {
-  width: 60px;
-  height: 60px;
-  background-image: linear-gradient(purple, blue);
+  width: 55px;
+  height: 55px;
+  background-image: linear-gradient(#715ece, #567dcc);
   position: fixed;
   bottom: -20px;
   right: -20px;
@@ -1127,6 +1172,7 @@ a {
 .chat-icon {
   font-size: 30px;
   color: white;
+  padding-top: 8px;
 }
 .small-chatbox {
   width: 240px;
@@ -1141,6 +1187,7 @@ a {
   font-size: 15px;
   padding-top: 30px;
   font-size: 14px;
+  z-index: 99;
 }
 .small-chatbox i {
   font-size: 20px;
@@ -1172,12 +1219,13 @@ a {
   position: absolute;
   right: 15px;
   bottom: 70px;
+  z-index: 999;
 }
 .chatbox-header {
   height: 66px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-image: linear-gradient(to right, purple, lightBlue);
+  background-image: linear-gradient(to right, #715ece, #567dcc);
   padding: 15px;
 }
 .chatbox-header-con {
@@ -1265,6 +1313,9 @@ a {
 }
 .chat-box-footer span {
   color: orange;
+}
+.floating-x-icon {
+  font-size: 40px;
 }
 .d-none {
   display: none;

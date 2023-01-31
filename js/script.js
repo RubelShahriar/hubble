@@ -1,4 +1,4 @@
-const menubar = document.querySelector(".menubar-img");
+const menubar = document.querySelector(".nav-menu-icon");
 const menuMultiply = document.querySelector(".menu-multiply-img");
 const x = document.querySelector(".small-chatbox");
 const bringBtn = document.querySelector(".bring-btn");
@@ -11,6 +11,17 @@ const floatingXIcon = document.querySelector(".floating-x-icon");
 const convIcon = document.querySelector(".conv-icon");
 const meteorImg = document.querySelector(".why-hubble-meteor-img");
 const meteorImg1 = document.querySelector(".meteor-img1");
+const satelite1 = document.querySelector(".satelite-img1");
+const navOl = document.querySelectorAll(".navitem-ul li");
+for (let index = 0; index < navOl.length; index++) {
+  const element = navOl[index];
+  element.addEventListener("mouseover", function () {
+    if (element.classList.includes("security-operations")) {
+      satelite1.style.display = "none";
+    }
+  });
+}
+// console.dir(navOl);
 
 AOS.init({
   duration: 1200,
